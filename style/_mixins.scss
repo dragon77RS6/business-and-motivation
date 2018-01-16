@@ -1,0 +1,89 @@
+//align and positions
+@mixin center-text {
+	text-align: center;
+}
+
+//align in vertical
+@mixin center-vertical {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+// style tezt for header
+@mixin list-style-text-header {
+	list-style-type: none;
+	text-decoration: none;
+	color: $basic-header-color;
+	font-family: $font-family-header;	
+}
+
+// framers
+// 1. framer for top
+@mixin section-border-top($border-color: $basic-border-color) {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: $border-color;
+}
+
+// 2. framer for bottom
+@mixin section-border-bottom($border-color: $basic-border-color) {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: $border-color;
+}
+
+//transition
+@mixin basic-transition {
+	transition: all 0.2s ease-in-out;
+}
+
+//variable transition
+@mixin variable-transition($length) {
+	transition: all $length ease-in-out;
+}
+
+//translate 3D
+@mixin translate3D($move-x, $move-y, $move-z) {
+	transform: translateX($move-x);
+	transform: translateY($move-y);
+	transform: translateZ($move-z);
+}
+
+//different sizes
+@mixin absolute-size {
+	position: absolute;
+	top: 0;
+	left: 0;
+	weight: 100%;
+	height: 100%;
+}
+
+//overlay with dark color
+@mixin dark-overlay {
+	content: "";
+	z-index: 0;
+	@include absolute-size;
+	background: none repeat 0 0 rgba(30, 30, 30, 0.5);
+}
+
+//hiding
+@mixin hide {
+	opacity: 0;
+}
+@mixin show {
+	opacity: 1;
+}
+
+//corner
+@mixin border-radius-single ($radius) {
+	border-radius: $radius;
+	-moz-border-redius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+
+
+
+
+

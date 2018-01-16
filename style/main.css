@@ -44,4 +44,57 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*** header ***/
+header .container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #DDD; }
+  header .container .navbar {
+    height: 63px; }
+    header .container .navbar .navlogo {
+      float: left;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2; }
+      header .container .navbar .navlogo .main-logo {
+        weight: 90px;
+        height: 73px;
+        position: relative;
+        top: 10px;
+        left: 30px; }
+
+.main-menu-contant {
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateY(-130%); }
+  .main-menu-contant li {
+    float: left;
+    display: block; }
+    .main-menu-contant li a {
+      color: #4a4a4a;
+      list-style-type: none;
+      text-decoration: none;
+      color: #222222;
+      font-family: "Lato", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 20px;
+      padding: 20px 16px;
+      transition: all 0.2s ease-in-out; }
+      .main-menu-contant li a:hover {
+        color: #00c2e7; }
+      @media screen tablet {
+        .main-menu-contant li a {
+          padding: 20px 22px; } }
+    .main-menu-contant li i {
+      font-size: 14px; }
+
 /*# sourceMappingURL=main.css.map */
