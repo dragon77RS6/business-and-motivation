@@ -62,7 +62,7 @@
 //overlay with dark color
 @mixin dark-overlay {
 	content: "";
-	z-index: 0;
+	z-index: -3;
 	@include absolute-size;
 	background: none repeat 0 0 rgba(30, 30, 30, 0.5);
 }

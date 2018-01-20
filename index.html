@@ -11,6 +11,8 @@
 <link rel="stylesheet" type="text/css" href="style/main.css">
 <!-- jQuery -->
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<!-- mobile menu -->
+<script src="http://js/jquery.slicknav.min.js"></script>
 </head> 
 <body>
 <!-- mein-container-->
@@ -36,6 +38,8 @@
 							<li><a href="">Kontakt</a></li>
 							<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
 						</ul>
+					</div>
+					<div id="attach-mobile-menu">
 					</div>
 				</div>
 			</nav>
@@ -215,5 +219,13 @@
 			</div>
 		</footer>
 	</div>
+	<script>
+		$(document).ready(function() {
+			/*mmobile manu */
+			$('#main-menu').slicknav({
+				prependTo: '#attach-mobile-menu'
+			});
+		});
+	</script>
 </body>
 </html>
